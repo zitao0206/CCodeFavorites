@@ -30,7 +30,7 @@ class ListNode {
     }
 }
 
-class List {
+class List00 {
     var head : ListNode?
     var tail : ListNode?
     

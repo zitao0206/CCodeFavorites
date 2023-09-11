@@ -9,18 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
-   
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    public init() {}
+    
+    public var body: some View {
+        NavigationView {
+            List {
+                NavigationLink.init("line 1", destination: Text("Content of line 1"))
+                NavigationLink.init("line 2", destination: Text("Content of line 2"))
+            }
         }
-        .onAppear {
-           
-        }
-        .padding()
+        .accentColor(.red)
     }
 }
 
