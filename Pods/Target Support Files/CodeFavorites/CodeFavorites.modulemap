@@ -1,0 +1,6 @@
+framework module CodeFavorites {
+  umbrella header "CodeFavorites-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct CommonOpsTest : CommonOpsProtocol {
- 
-    func testCase() {
+public struct CommonOpsTest : CommonOpsProtocol {
+    
+    public init() {}
+    
+    public func testCase() {
        
 //        let arr = ArrayCommonOps()
 //        arr.testCase()

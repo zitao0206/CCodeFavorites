@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct TopicsTest : CommonOpsProtocol {
+public struct TopicsTest : CommonOpsProtocol {
     
-    func testCase() {
+    public init() {}
+    
+    public func testCase() {
         
         let topic_283 = Topic_283_MoveZeroes()
         topic_283.testCase()

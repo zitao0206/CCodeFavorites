@@ -7,9 +7,11 @@
 
 import Foundation
 
-struct FavoritesTest : CommonOpsProtocol {
- 
-    func testCase() {
+public struct FavoritesTest : CommonOpsProtocol {
+    
+    public init() {}
+    
+    public func testCase() {
      
         Recursion().testCase()
         

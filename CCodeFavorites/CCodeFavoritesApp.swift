@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CodeFavorites
 
 @main
 struct CCodeFavoritesApp: App {

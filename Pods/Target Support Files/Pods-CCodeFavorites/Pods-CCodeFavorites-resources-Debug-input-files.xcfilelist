@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-CCodeFavorites/Pods-CCodeFavorites-resources.sh
+${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CCodeFavorites.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CCodeFavorites-Images.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CCodeFavorites-Videos.bundle

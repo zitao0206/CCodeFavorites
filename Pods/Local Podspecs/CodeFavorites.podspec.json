@@ -1,0 +1,50 @@
+{
+  "name": "CodeFavorites",
+  "version": "0.1.0",
+  "summary": "A short description of CodeFavorites.",
+  "homepage": "https://github.com/zitao0206/CCodeFavorites",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zitao0206": "634376133@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/zitao0206/CCodeFavorites.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "16.0"
+  },
+  "pod_target_xcconfig": {
+    "GCC_PREPROCESSOR_DEFINITIONS": "__CUI_MODULE_NAME__=\\\"CCodeFavorites\\\" CUI_MODULE_NAME=@\\\"CCodeFavorites\\\""
+  },
+  "source_files": [
+    "Classes/**/*"
+  ],
+  "resource_bundles": {
+    "CCodeFavorites": [
+      "Assets/**/*"
+    ],
+    "CCodeFavorites-Images": [
+      "Resources/Images/**/*"
+    ],
+    "CCodeFavorites-Videos": [
+      "Resources/Videos/**/*"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "MapKit"
+  ],
+  "dependencies": {
+    "AKOCommonToolsKit": [
+
+    ],
+    "Masonry": [
+
+    ]
+  }
+}
