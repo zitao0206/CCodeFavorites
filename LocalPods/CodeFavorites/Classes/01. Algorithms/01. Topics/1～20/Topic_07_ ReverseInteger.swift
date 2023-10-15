@@ -14,6 +14,7 @@ class Topic_07_ReverseInteger : CommonOpsProtocol {
         print(result)
     }
     
+    //From myself
     func reverse(_ x: Int) -> Int {
         var isNegtive: Bool = false
         var xValue = x
@@ -28,11 +29,33 @@ class Topic_07_ReverseInteger : CommonOpsProtocol {
             rString.append(ch)
         }
         var result = (rString as NSString).integerValue
-        if result > 2147483648 {
+        
+        if !isNegtive && result >= Int32.max {
             result = 0
         }
+        if isNegtive && result > Int32.max {
+            result = 0
+        }
+        
         if isNegtive {
             result = -result
+        }
+        return result
+    }
+    
+    func reverse_01(_ x: Int) -> Int {
+        var result = 0
+        var num = x
+        while num != 0 {
+            let digit = num % 10
+            num /= 10
+            if result > Int32.max / 10 || (result == Int32.max / 10 && digit > 7) {
+                return 0
+            }
+            if result < Int32.min / 10 || (result == Int32.min / 10 && digit < -8) {
+                return 0
+            }
+            result = result * 10 + digit
         }
         return result
     }

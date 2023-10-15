@@ -7,7 +7,7 @@ source 'https://github.com/zitao0206/MDSpecs.git'
 install! 'cocoapods',
          :warn_for_unused_master_specs_repo => false,
          :warn_for_multiple_pod_sources => false,
-         :preserve_pod_file_structure => true
+         :preserve_pod_file_structure => false
 
 platform :ios, '16.0'
 inhibit_all_warnings!
@@ -22,6 +22,8 @@ target 'CCodeFavorites' do
   pod 'AKOCommonToolsKit', '0.0.31'
 
 end
+
+
 
 post_install do |installer|
   installer.pod_target_subprojects.flat_map { |project| project.targets }.each do |target|

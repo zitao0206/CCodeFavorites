@@ -9,17 +9,51 @@ import Foundation
 
 class StringCommonOps : CommonOpsProtocol {
     func testCase() {
-//        let s = "abcdefg"
-//        let results = obtanSubstring(s: s, begin: 2, end: 3)
-//        print(results)
-//        forloop1(s)
-//        forloop2(s)
-//        forloop3(s)
+        
+        //00. 获取子串
+        let s = "abcdefg"
+        let results = obtanSubstring(s: s, begin: 2, end: 3)
+        print(results)
+        
+        //01. 遍历字符串
+        forloop1(s)
+        forloop2(s)
+        forloop3(s)
+        
+        //02. 获取指定Index的String
         obtainIndexString()
+        
+        //03. Int转String
+        IntToString()
+        
+        //04. String与NSString的互转
         StringToNSString()
         NSStringToString()
+        
+        //05. 删除子串与删除字符
         deleSubstring()
+        
+        //06. 判断是否是回文子串aba,abba,121
+        let sp = "aba"
+        isPalindromicSubstring(s: sp)
     }
+    
+    //Int转String
+    func IntToString() {
+        let number = 123
+        let str = String(number)
+        
+    }
+    
+    func StringToIn() {
+        let str = "123"
+        if let number = Int(str) {
+            print("The string converted to integer is: \(number)")
+        } else {
+            print("Conversion failed. The string is not a valid integer.")
+        }
+    }
+    
     func obtainIndexString() {
         let greeting = "Guten Tag!"
         print(greeting[greeting.startIndex])
@@ -32,6 +66,7 @@ class StringCommonOps : CommonOpsProtocol {
         print(greeting[index])
         
     }
+    
     //获取子串
     func obtanSubstring(s: String, begin: Int, end: Int) -> String {
         let res = String(s[s.index(s.startIndex, offsetBy: begin)..<s.index(s.startIndex, offsetBy: end + 1)])

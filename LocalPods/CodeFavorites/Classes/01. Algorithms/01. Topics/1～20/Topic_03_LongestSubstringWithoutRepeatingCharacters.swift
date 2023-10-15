@@ -19,6 +19,7 @@ class Topic_03_LongestSubstringWithoutRepeatingCharacters : CommonOpsProtocol {
         print(length)
     }
     
+    //O(n) --- From myself
     func lengthOfLongestSubstring(_ s: String) -> Int {
         if s.isEmpty {
             return 0
@@ -26,19 +27,20 @@ class Topic_03_LongestSubstringWithoutRepeatingCharacters : CommonOpsProtocol {
         var result = 1
         var begin = 0
         var walkDict = [Character: Int]()
+        
         for (i, ch) in s.enumerated() {
-            if walkDict[ch] != nil && walkDict[ch]! >= begin && walkDict[ch]! > -1 {
-                begin = walkDict[ch]! + 1
-                walkDict[ch] = i
-            } else {
-                walkDict[ch] = i
-                result = max(result, i - begin + 1)
+            if let index = walkDict[ch], index >= begin {
+                begin = index + 1
             }
+            walkDict[ch] = i
+            result = max(result, i - begin + 1)
         }
+        
         print(walkDict)
         return result
     }
     
+    //O(n) --- From Others
     func lengthOfLongestSubstring02(_ s: String) -> Int {
         if s.isEmpty {
             return 0

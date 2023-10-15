@@ -19,7 +19,7 @@ public struct CommonOpsTest : CommonOpsProtocol {
 //        let d = DictionaryCommonOps()
 //        d.testCase()
 //
-//        let s = StringCommonOps()
-//        s.testCase()
+        let s = StringCommonOps()
+        s.testCase()
     }
 }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 class Topic_09_PalindromeNumber : CommonOpsProtocol {
     func testCase() {
         print("https://leetcode.cn/problems/palindrome-number/")
@@ -15,14 +16,14 @@ class Topic_09_PalindromeNumber : CommonOpsProtocol {
     }
 
     func isPalindrome(_ x: Int) -> Bool {
-        if x < 0 {
+        guard x >= 0 else {
             return false
         }
+        
         if x == 0 {
             return true
         }
-        let xValue = x as NSNumber
-        let xString : String = xValue.stringValue
+        let xString = String(x)
         return isPalindromicSubstring(s: xString)
     }
     
@@ -37,5 +38,7 @@ class Topic_09_PalindromeNumber : CommonOpsProtocol {
         }
         return true
     }
+    
+    
 }
 

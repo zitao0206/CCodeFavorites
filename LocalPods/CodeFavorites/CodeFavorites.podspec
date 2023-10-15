@@ -17,6 +17,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '16.0'
   s.pod_target_xcconfig = { 'GCC_PREPROCESSOR_DEFINITIONS' => '__CUI_MODULE_NAME__=\"CCodeFavorites\" CUI_MODULE_NAME=@\"CCodeFavorites\"'}
 
+
   s.source_files = [
     'Classes/**/*'
   ]

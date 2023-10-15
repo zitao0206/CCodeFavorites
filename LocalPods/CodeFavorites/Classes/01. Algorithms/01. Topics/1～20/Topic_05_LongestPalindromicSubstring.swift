@@ -17,6 +17,7 @@ class Topic_05_LongestPalindromicSubstring : CommonOpsProtocol {
         print(subString)
     }
     
+    //
     func longestPalindrome(_ s: String) -> String {
        let n = s.count
        if n < 2 {
@@ -26,18 +27,19 @@ class Topic_05_LongestPalindromicSubstring : CommonOpsProtocol {
        var maxLength = 0
        let sArray = Array(s)
        for i in 0..<n {
-           let oddLength = expandAroundCenter(sArray, n, i, i)
-           let evenLength = expandAroundCenter(sArray, n, i, i + 1)
-           let length = max(oddLength, evenLength)
-           if length > maxLength {
-               maxLength = length
+           let len1 = expandAroundCenter(sArray, n, i, i)
+           let len2 = expandAroundCenter(sArray, n, i, i + 1)
+           let len = max(len1, len2)
+           if len > maxLength {
+               maxLength = len
                start = i - (maxLength - 1) / 2
            }
        }
-       return String(sArray[start..<start+maxLength])
+       return String(sArray[start..<start + maxLength])
     }
        
     func expandAroundCenter(_ s: [Character], _ n: Int, _ left: Int, _ right: Int) -> Int {
+        
        var l = left
        var r = right
        while l >= 0 && r < n && s[l] == s[r] {

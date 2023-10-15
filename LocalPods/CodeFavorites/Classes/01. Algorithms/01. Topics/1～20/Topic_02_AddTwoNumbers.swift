@@ -30,6 +30,7 @@ class Topic_02_AddTwoNumbers : CommonOpsProtocol {
 //        two_l2.next = three_l2
     
         let results0 = self.addTwoNumbers(one_l1, one_l2)
+        
         self.printList(results0)
     }
     

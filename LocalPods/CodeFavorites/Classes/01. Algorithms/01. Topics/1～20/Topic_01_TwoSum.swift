@@ -6,15 +6,22 @@
 //
 
 import Foundation
+/*
+ 
+ OriginalUrl: https://leetcode.cn/problems/two-sum/
+ ImageName：
+  
+ */
 
 class Topic_01_TwoSum : CommonOpsProtocol {
+    
     func testCase() {
-        print("https://leetcode.cn/problems/two-sum/")
         let nums:[Int] = [2,7,11,15]
         let target = 26
         let results = twoSum(nums, target)
         print(results)
     }
+    
     //O(n*n) --- From myself
     func twoSum1(_ nums: [Int], _ target: Int) -> [Int] {
         let n = nums.count
@@ -31,8 +38,10 @@ class Topic_01_TwoSum : CommonOpsProtocol {
         results.append(0)
         return results
     }
+    
     //O(n) --- From ChatGPT
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        
         var dict = [Int: Int]()
         for (i, num) in nums.enumerated() {
             if let index = dict[target - num] {
