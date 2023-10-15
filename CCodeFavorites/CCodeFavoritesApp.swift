@@ -22,9 +22,9 @@ struct CCodeFavoritesApp: App {
     }
     
     func setup() {
-//        algorithmTestModel.testCase()
-//        commonOpsTestModel.testCase()
-//        exit(0)
+        algorithmTestModel.testCase()
+        commonOpsTestModel.testCase()
+        exit(0)
     }
 }
 
@@ -34,7 +34,7 @@ class AlgorithmTestModel: ObservableObject {
     func testCase() {
         FavoritesTest().testCase()
         TopicsTest().testCase()
-        
+        InterviewTest().testCase()
     }
 }
 

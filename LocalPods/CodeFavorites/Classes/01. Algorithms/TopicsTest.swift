@@ -13,8 +13,8 @@ public struct TopicsTest : CommonOpsProtocol {
     
     public func testCase() {
         
-        let topic_283 = Topic_283_MoveZeroes()
-        topic_283.testCase()
+//        let topic_283 = Topic_283_MoveZeroes()
+//        topic_283.testCase()
         
 //        Topic_121_BestTimeToBuyAndSellStock().testCase()
         
