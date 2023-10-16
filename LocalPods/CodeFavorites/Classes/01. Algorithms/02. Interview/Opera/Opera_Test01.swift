@@ -18,6 +18,7 @@ class Opera_Test01 : CommonOpsProtocol {
         
     }
     
+    // from chatGPT
     func solution(_ A: inout [Int], _ R: Int) -> Int {
         
         var distinctCount = 0
