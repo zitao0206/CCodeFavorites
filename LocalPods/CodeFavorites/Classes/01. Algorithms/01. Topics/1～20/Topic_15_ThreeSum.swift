@@ -8,6 +8,7 @@
 import Foundation
 
 class Topic_15_ThreeSum : CommonOpsProtocol {
+    
     func testCase() {
         let nums = [-1,0,1,2,-1,-4]
         let results = threeSum(nums)
@@ -88,18 +89,6 @@ class Topic_15_ThreeSum : CommonOpsProtocol {
 
         return result
     }
-
-    // 示例 1
-    let nums1 = [-1,0,1,2,-1,-4]
-    print(threeSum(nums1)) // Output: [[-1, -1, 2], [-1, 0, 1]]
-
-    // 示例 2
-    let nums2 = [0,1,1]
-    print(threeSum(nums2)) // Output: []
-
-    // 示例 3
-    let nums3 = [0,0,0]
-    print(threeSum(nums3)) // Output: [[0, 0, 0]]
 
 }
 

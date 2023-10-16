@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Test01 : CommonOpsProtocol {
+class HCL_Test01 : CommonOpsProtocol {
     
     func testCase() {
         let inputString = "formaxamfor"

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Test00 : CommonOpsProtocol {
+class HCL_Test00 : CommonOpsProtocol {
     
     func testCase() {
 //        let sourceArray = [5, 75, 325, 800, 375, 575, 300, 25, 925, 875]

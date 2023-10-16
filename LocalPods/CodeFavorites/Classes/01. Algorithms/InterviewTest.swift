@@ -13,9 +13,12 @@ public struct InterviewTest : CommonOpsProtocol {
     
     public func testCase() {
         
-        Test00().testCase()
+        Opera_Test00().testCase()
+        Opera_Test01().testCase()
+        Opera_Test02().testCase()
         
-        Test01().testCase()
+//        HCL_Test00().testCase()
+//        HCL_Test01().testCase()
         
     }
 }
