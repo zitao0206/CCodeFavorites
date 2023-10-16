@@ -52,6 +52,55 @@ class Topic_15_ThreeSum : CommonOpsProtocol {
         }
         return solutions
     }
+    
+    
+    func threeSum_01(_ nums: [Int]) -> [[Int]] {
+        
+        var result: [[Int]] = []
+        let nums = nums.sorted()
+
+        for i in 0..<nums.count {
+            if i > 0 && nums[i] == nums[i - 1] {
+                continue
+            }
+            var left = i + 1
+            var right = nums.count - 1
+
+            while left < right {
+                let sum = nums[i] + nums[left] + nums[right]
+                if sum == 0 {
+                    result.append([nums[i], nums[left], nums[right]])
+                    while left < right && nums[left] == nums[left + 1] {
+                        left += 1
+                    }
+                    while left < right && nums[right] == nums[right - 1] {
+                        right -= 1
+                    }
+                    left += 1
+                    right -= 1
+                } else if sum < 0 {
+                    left += 1
+                } else {
+                    right -= 1
+                }
+            }
+        }
+
+        return result
+    }
+
+    // 示例 1
+    let nums1 = [-1,0,1,2,-1,-4]
+    print(threeSum(nums1)) // Output: [[-1, -1, 2], [-1, 0, 1]]
+
+    // 示例 2
+    let nums2 = [0,1,1]
+    print(threeSum(nums2)) // Output: []
+
+    // 示例 3
+    let nums3 = [0,0,0]
+    print(threeSum(nums3)) // Output: [[0, 0, 0]]
+
 }
 
 

@@ -8,7 +8,7 @@
 import Foundation
 class Topic_283_MoveZeroes : CommonOpsProtocol {
     func testCase() {
-        var nums = [0,1,0,3,12]
+        var nums = [1,1,0,3,12]
         moveZeroes(&nums)
         print(nums)
         

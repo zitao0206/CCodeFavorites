@@ -17,13 +17,19 @@ class Topic_121_BestTimeToBuyAndSellStock : CommonOpsProtocol {
     }
     
     func maxProfit(_ prices: [Int]) -> Int {
+        
         let p = prices
+        
         if p.count < 2 {
             return 0
         }
+        
         var maxValue = 0
+        
         var buy = p[0]
+        
         var sell: Int = 0
+        
         for value in p.dropFirst() {
             sell = value
             let temp = sell - buy
@@ -35,6 +41,7 @@ class Topic_121_BestTimeToBuyAndSellStock : CommonOpsProtocol {
                 }
             }
         }
+        
         return maxValue
     }
 }
