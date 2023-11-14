@@ -6,15 +6,12 @@
 //
 
 import Foundation
-
+// from https://app.codility.com/
 class Opera_Test00 : CommonOpsProtocol {
     
     func testCase() {
         let res = solution(1, 100)
         print(res)
-        
-    
-        
     }
 
     public func solution(_ A: Int, _ B: Int) -> Int {
