@@ -19,7 +19,7 @@ class StringCommonOps : CommonOpsProtocol {
         forloop1(s)
         forloop2(s)
         forloop3(s)
-//        forloop4(s)
+        forloop4(s)
         
         //02. 获取指定Index的String
         obtainIndexString()
