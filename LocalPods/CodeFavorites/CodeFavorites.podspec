@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
      'CCodeFavorites-Images' => ['Resources/Images/**/*'],
      'CCodeFavorites-Videos' => ['Resources/Videos/**/*']
   }
-  
 #  s.public_header_files = 'CCodeFavorites/Classes/**/*.h'
 #  s.prefix_header_file = 'CCodeFavorites.pch'
   s.frameworks = 'UIKit', 'Foundation', 'MapKit'
