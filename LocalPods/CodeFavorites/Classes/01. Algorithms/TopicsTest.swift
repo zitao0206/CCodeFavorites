@@ -51,8 +51,8 @@ public struct TopicsTest : CommonOpsProtocol {
 //        let topic_12 = Topic_12_IntegerToRoman()
 //        topic_12.testCase()
 
-        let topic_09 = Topic_09_PalindromeNumber()
-        topic_09.testCase()
+//        let topic_09 = Topic_09_PalindromeNumber()
+//        topic_09.testCase()
 
         //let topic_07 = Topic_07_ReverseInteger()
         //topic_07.testCase()
