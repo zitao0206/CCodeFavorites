@@ -2,17 +2,23 @@ PODS:
   - AKOCommonToolsKit (0.0.31)
   - CodeFavorites (0.1.0):
     - AKOCommonToolsKit
+    - FMDB
     - Masonry
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AKOCommonToolsKit (= 0.0.31)
   - CodeFavorites (from `./LocalPods/CodeFavorites`)
+  - FMDB
 
 SPEC REPOS:
   https://github.com/zitao0206/MDSpecs.git:
     - AKOCommonToolsKit
   trunk:
+    - FMDB
     - Masonry
 
 EXTERNAL SOURCES:
@@ -21,9 +27,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AKOCommonToolsKit: 2b62669cc9704a200defd16b5c06a33404f47f24
-  CodeFavorites: 13a0d73d5cdd08b5f9b42ef1e680a37847284ac9
+  CodeFavorites: bfa5652bd2df79f775608055ce1eb97af4133d8e
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: a6201e0ff70d51c1cc376e3c86953fca968e98a5
+PODFILE CHECKSUM: 75e56ca96e4e5d05c3a0a4e771f01862fb7398bd
 
 COCOAPODS: 1.11.3

@@ -1,11 +1,11 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit" "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit" "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit/AKOCommonToolsKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CodeFavorites.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit/AKOCommonToolsKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CodeFavorites.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers"
 LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit/AKOCommonToolsKit.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CodeFavorites.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Masonry"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "AKOCommonToolsKit" -framework "CodeFavorites" -framework "Foundation" -framework "MapKit" -framework "Masonry" -framework "UIKit"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit/AKOCommonToolsKit.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites/CodeFavorites.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers" -isystem "${PODS_CONFIGURATION_BUILD_DIR}/Masonry/Masonry.framework/Headers" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/AKOCommonToolsKit" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/CodeFavorites" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/FMDB" -iframework "${PODS_CONFIGURATION_BUILD_DIR}/Masonry"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"sqlite3" -framework "AKOCommonToolsKit" -framework "CodeFavorites" -framework "FMDB" -framework "Foundation" -framework "MapKit" -framework "Masonry" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

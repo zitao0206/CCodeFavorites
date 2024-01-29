@@ -33,6 +33,7 @@ Pod::Spec.new do |s|
   s.frameworks = 'UIKit', 'Foundation', 'MapKit'
   s.dependency 'AKOCommonToolsKit'
   s.dependency 'Masonry'
+  s.dependency 'FMDB'
 #  s.dependency 'SVProgressHUD'
 
 end

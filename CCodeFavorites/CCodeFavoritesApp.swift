@@ -11,8 +11,9 @@ import CodeFavorites
 @main
 struct CCodeFavoritesApp: App {
     
-    @StateObject private var algorithmTestModel = AlgorithmTestModel()
     @StateObject private var commonOpsTestModel = CommonOpsTestModel()
+    @StateObject private var algorithmTestModel = AlgorithmTestModel()
+    @StateObject private var dataBaseTestModel = DataBaseTestModel()
     
     var body: some Scene {
         WindowGroup {
@@ -22,12 +23,19 @@ struct CCodeFavoritesApp: App {
     }
     
     func setup() {
-        algorithmTestModel.testCase()
-        commonOpsTestModel.testCase()
+//        commonOpsTestModel.testCase()
+//        algorithmTestModel.testCase()
+        dataBaseTestModel.testCase()
         exit(0)
     }
 }
 
+class CommonOpsTestModel: ObservableObject {
+    
+    func testCase() {
+        CommonOpsTest().testCase()
+    }
+}
 
 class AlgorithmTestModel: ObservableObject {
     
@@ -38,11 +46,13 @@ class AlgorithmTestModel: ObservableObject {
     }
 }
 
-class CommonOpsTestModel: ObservableObject {
+class DataBaseTestModel: ObservableObject {
     
     func testCase() {
-        CommonOpsTest().testCase()
+        DataBaseOpsTest().testCase()
     }
 }
+
+
 
 

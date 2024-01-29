@@ -20,6 +20,7 @@ project 'CCodeFavorites.xcodeproj'
 target 'CCodeFavorites' do
   pod 'CodeFavorites', :path => './LocalPods/CodeFavorites'
   pod 'AKOCommonToolsKit', '0.0.31'
+  pod 'FMDB'
 
 end
 
